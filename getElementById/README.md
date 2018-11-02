@@ -47,3 +47,7 @@ Este método recolhe elementos pelo atributo `class`, a diferença para o métod
 ```
 
 A variável `fala_`, posta desta forma, é o dito array de elementos da classe. Enquanto `fala_shrek` e `fala_burro` utilizam `[0]`, ou seja, selecionam o primeiro elemento do array, que no caso é o primeiro elemento com a classe. Analise o console para verificar a saída.
+
+## getElementsByTagName()
+
+Conceito semelhante ao do método `getElementsByClassName()`.
