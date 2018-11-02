@@ -15,26 +15,40 @@
 </head>
 <body>
     
+    <!-- getElementById()   -->
     <div id="time-peq">Vasxcão</div>
     <div id="time-gig">Ibis</div>
 
+    <!-- getElementsByClassName() -->
+    <img src="https://www.awn.com/sites/default/files/styles/inline_wide/public/image/featured/42709-decade-shrek-tech.jpg?itok=15gWVDNU" alt="shrek">
     <div class="shrek">Ogros são como as cebolas, têm camadas!</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mApskpPjLqrOaHEksws5FuQX54psUKdyPbhb8gArkCmPRSOWxA" alt="burro">
     <div class="burro">Sabe o quê mais tem camadas? Pavê! Todo mundo gosta de pavê!</div>
 
+    <!-- getElementsByTagName() -->
     <br>
     <form></form>
     <button>EI!</button>
+
+    <!-- querySelector() -->
+    <div id="test1">test1</div>
+    <div class="test2">222</div>
+    <div class="test2">333</div>
+    <p>test3</p>
+    <p class="test3">test4</p>
     <!--
         TAG script no fim da TAG body
 
         Faz o código .js ser iniciado após todo conteúdo html da página.
     -->
     <script>
+        // getElementById()
         console.log(
             document.getElementById("time-gig"),
             document.getElementById("time-gig").innerHTML
         );
 
+        // getElementsByClassName()
         var fala_ = document.getElementsByClassName('shrek').innerHTML;
         var fala_shrek = document.getElementsByClassName('shrek')[0].innerHTML;
         var fala_burro = document.getElementsByClassName('burro')[0].innerHTML;
@@ -44,12 +58,21 @@
             console.log(dialog[i]);
         }
 
+        //getElementesByTagName()
         console.log(
             document.getElementsByTagName('button'),
             document.getElementsByTagName('button')[0],
             document.getElementsByTagName('button')[0].innerHTML
         );
-        
+
+        // querySelector()
+        console.log(
+            document.querySelector("#test1"),
+            document.querySelector(".test2"),
+            document.querySelector("p"),
+            document.querySelector("p.test3")
+        )
+
     </script>
 </body>
 </html>

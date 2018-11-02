@@ -1,5 +1,7 @@
 # Résumé
 
+Todos os comandos estão na tag `<script>` no arquivo [index.html](.index.html), os resultados estão no console do navegador.
+
 ## getElementById()
 
 O método `getElementById()`, como o próprio nome explicita, recolhe um elemento no corpo do html, pelo seu atributo `id`.
@@ -61,3 +63,16 @@ Conceito semelhante ao do método `getElementsByClassName()`, em relação a for
 ```
 
 No trecho, o primeiro argumento de `console.log()` retorna o array de tamanho 1. O segundo argumento retorna o primeiro elemento deste array. E o terceiro argumento retorna o conteúdo deste primeiro elemento.
+
+## querySelector()
+
+Pode ser usado tanto para tags, quanto para classes e id's. A diferença para `getElementsByClassName()` e `getElementsByTagName()`, é que `querySelector()` retorna a primeira aparição, ao invés de um array de elementos. A semântica também é diferente:
+
+```js
+    console.log(
+        document.querySelector("#test1"),
+        document.querySelector(".test2"),
+        document.querySelector("p"),
+        document.querySelector("p.test3")
+    );
+```
