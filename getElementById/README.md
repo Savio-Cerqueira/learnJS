@@ -50,4 +50,14 @@ A variável `fala_`, posta desta forma, é o dito array de elementos da classe. 
 
 ## getElementsByTagName()
 
-Conceito semelhante ao do método `getElementsByClassName()`.
+Conceito semelhante ao do método `getElementsByClassName()`, em relação a formação de array de elementos. 
+
+```js
+    console.log(
+        document.getElementsByTagName('button'),
+        document.getElementsByTagName('button')[0],
+        document.getElementsByTagName('button')[0].innerHTML
+    );
+```
+
+No trecho, o primeiro argumento de `console.log()` retorna o array de tamanho 1. O segundo argumento retorna o primeiro elemento deste array. E o terceiro argumento retorna o conteúdo deste primeiro elemento.
