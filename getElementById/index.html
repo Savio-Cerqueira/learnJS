@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DOM -- getElementByID</title>
+    
+    <!--
+        TAG script dentro da TAG head
+
+        Faz o código .js ser iniciado antes do conteúdo html da página.
+    -->
+    <script>
+    
+    </script>
+</head>
+<body>
+    
+    <div id="time-peq">Vasxcão</div>
+    <div id="time-gig">Ibis</div>
+
+    <div class="shrek">Ogros são como as cebolas, têm camadas!</div>
+    <div class="burro">Sabe o quê mais tem camadas? Pavê! Todo mundo gosta de pavê!</div>
+
+    
+    <!--
+        TAG script no fim da TAG body
+
+        Faz o código .js ser iniciado após todo conteúdo html da página.
+    -->
+    <script>
+        console.log(
+            document.getElementById("time-gig"),
+            document.getElementById("time-gig").innerHTML
+        );
+
+        var fala_ = document.getElementsByClassName('shrek').innerHTML;
+        var fala_shrek = document.getElementsByClassName('shrek')[0].innerHTML;
+        var fala_burro = document.getElementsByClassName('burro')[0].innerHTML;
+        var dialog = ["- " + fala_, "- " + fala_shrek, "- " + fala_burro];
+
+        for(i=0; i<dialog.length; i++){
+            console.log(dialog[i]);
+        }
+
+    </script>
+</body>
+</html>
