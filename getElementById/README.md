@@ -2,7 +2,7 @@
 
 ## getElementById()
 
-O método `getElementById()`, como o próprio nome explicita, recolhe um elemento no corpo do html, pelo do seu atributo `id`.
+O método `getElementById()`, como o próprio nome explicita, recolhe um elemento no corpo do html, pelo seu atributo `id`.
 
 HTML:
 
